@@ -24,81 +24,345 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.slider-partner .slick-dots{
+		display: none !important;
+	}
 }
-.lightbox {
-	display: none;
-	position: fixed;
-	z-index: 5;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgb(0 0 0 / 67%);
-	background-size: cover;
-	background-repeat: no-repeat;
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+	.slide-homepage .slick-prev{
+		left: 70px !important;
+	}
+	.slide-homepage .slick-next{
+		right: 70px !important;
+	}
+	.section-post-homepage .poster{
+		display: none;
+	}
+	.fami-shop-text .item {
+    	margin-top: 15px;
+	}
+	.fami-shop-text .text-1 {
+    	margin-top: -10px;
+	}
+	.slider-partner .slick-dots{
+		display: none !important;
+	}
 }
-.lightbox:target {
-	outline: none;
-	display: block;
+@media screen and (max-width: 1199px){
+	.slide-homepage .slick-prev{
+		display: none !important;
+	}
+	.slide-homepage .slick-next{
+		display: none !important;
+	}
+	.section-post-homepage .poster{
+		display: none !important;
+	}
+	.slider-partner .slick-prev, .slider-partner .slick-next{
+		display: none !important;
+	}
 }
+@media screen and (max-width: 1199px) and (min-width: 992px){
+	.fami-shop-text .text{
+		top: 8%;
+		left: 21.5%;
+	}
+	.fami-shop-text .item{
+		margin-top: 0;
+	}
+	.fami-shop-text .text-1{
+		margin-top: -10px;
+	}
+	.link-page .btn-link{
+		padding: 9px 35px 9px 25px;
+	}
+	.link-page .btn-link:before {
+	    right: 15px;
+	}
+	
 
-#videoModal {
-  	border-radius: 5px;
-  	width: 40%;
-  	height: 40%;
-  	margin: 12% auto;
-	display: block;
-	overflow: hidden;
-	padding: 5px;
-	background: #811F18;
-}  
- #videoModal .modal-body {
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
-#videoModal .modal-body iframe{
-    width: 100%;
-	height: 100%;
+@media screen and (min-width: 765px) and (max-width: 992px){
+	.slide-homepage .slick-dots{
+		bottom: 20px;
+	}
+	.video-homepage:before{
+		left: -10px !important;
+		bottom: 80px;
+	}
+	.video-homepage:after{
+		bottom: 0px !important;
+	}
+	.post-item .img .title p{
+		padding: 5px 5px;
+	}
+	.fami-shop-text .text{
+		position: inherit;
+		left: auto;
+    	top: auto;
+	}
+	.fami-shop-text .text-1{
+	    margin-left: 0;
+	    margin-top: 0;
+	}
+	.fami-shop-text .text-1 .text{
+		left: auto;
+	}
+	.fami-shop-text .text p{
+		padding-left: 10px;
+	}
+	.fami-shop-text .text p span{
+		position: inherit;
+		margin-right: 20px;
+	}
+	.fami-shop-text .item img{
+		display: none;
+	}
+	.fami-shop-text .item{
+		margin-top: 5px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+	}
+	.fami-shop-text .text p{
+		font-size: 14px;
+	}
+	.fami-shop-text .text p span{
+		position: relative;
+	}
+	.fami-shop-text .text p span:before{
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		background: #b92f29;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+    	border-radius: 50%;
+	}
+	.fami-shop-text .text p span:after{
+		position: absolute;
+		content: '';
+		width: 320px;
+		height: 30px;
+		border: 1px solid #b92f29;
+		left: 00%;
+		top: 50%;
+		transform: translate(0%, -50%);
+		z-index: -1;
+    	border-radius: 20px;
+	}
 }
- #videoModal .modal-footer:empty {
-    display: none !important;
+@media screen and (max-width: 992px){
+	.introduce .description-title, .btn-seemore{
+		margin-top: 10px;
+	}
+	.title-style-1 h2, .title-style-white h2{
+		font-size: 25px;
+	}
+	.introduce .description-title, .fami-app .box .item-app p,
+	.main-menu li a{
+		font-size: 14px;
+	}
+	.style-center p{
+		font-size: 14px;
+		width: 66%;
+    	margin: 20px auto;
+	}
+	.btn-seemore{
+		font-size: 14px;
+		padding: 8px 30px;
+	}
+	.post-item .img .title p{
+		font-size: 16px;
+	}
+	.fami-shop-text .text p span{
+		font-size: 20px;
+	}
+	.section-linkpage{
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.link-page{
+		display: inherit;
+		text-align: center;
+	}
+	.link-page .btn-link{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.fami-app{
+		margin-top: 0;
+	}
+	.item-app{
+		width: 70%;
+	}
+	.fami-app .box:nth-child(2n+1) .item-app{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.padding-top-60{
+		padding-top: 30px;
+	}
+	.section-app{
+		padding-bottom: 50px;
+	}
+	.parner{
+		padding-bottom: 20px;
+	}
+	.nav-tabs-news .nav-tabs .nav-item .nav-link{
+		font-size: 14px;
+	}
+	.nav-tabs-news .nav-tabs{
+		width: 660px;
+	}
+	.nav-tabs-news .nav-tabs .nav-item{
+		width: 220px;
+	}
+	.new-item .img{
+		height: 150px;
+	}
+	.new-item .content-news .see-detail a{
+		font-size: 14px;
+	}
+	.new-item .content-news .title-news a{
+		font-size: 16px;
+		line-height: normal;
+	}
+	.new-item .content-news .title-news p{
+		font-size: 14px;
+		line-height: normal;
+	}
+	.form-search form input{
+		width: 250px;
+		float:right;
+	}
 }
-#videoModal .close {
-    color: #fff;
-    font-size: 24px;
-    margin: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    text-shadow: none;
-    top: 5px;
-    width: 38px;
-}
-
-/* test */
-.bd-example,
-.tab-content{
-  width:100%;
-  display:inline-block;
-  vertical-align: top;
-}
-.slider h3 {
-    background: #000;
-    color: #3498db;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
-
-.slick-prev:before, 
-.slick-next:before {
-
-    color: black;
+@media screen and (max-width: 765px){
+	.slide-homepage .slick-dots{
+		bottom: 10px;
+	}
+	.introduce{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.title-style-1 h2{
+		padding-left: 0;
+	}
+	.famishop-banner{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.famishop-homepage{
+		margin-top: 0px;
+	}
+	.famishop-banner:before{
+		top: 0px;
+    	right: 0px;
+	}
+	.fami-shop-text .text{
+		position: inherit;
+		left: auto;
+    	top: auto;
+	}
+	.fami-shop-text .text-1{
+	    margin-left: 0;
+	    margin-top: 0;
+	}
+	.fami-shop-text .text-1 .text{
+		left: auto;
+	}
+	.fami-shop-text .text p{
+		padding-left: 10px;
+	}
+	.fami-shop-text .text-1 p{
+		padding-left: 12px;
+	}
+	.fami-shop-text .text p span{
+		position: inherit;
+		margin-right: 20px;
+	}
+	.fami-shop-text .item img{
+		display: none;
+	}
+	.fami-shop-text .item{
+		margin-top: 5px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+	}
+	.fami-shop-text .text p{
+		font-size: 14px;
+	}
+	.fami-shop-text .text p span{
+		position: relative;
+	}
+	.fami-shop-text .text p span:before{
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		background: #b92f29;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+    	border-radius: 50%;
+	}
+	.fami-shop-text .text p span:after{
+		position: absolute;
+		content: '';
+		width: 320px;
+		height: 30px;
+		border: 1px solid #b92f29;
+		left: 00%;
+		top: 50%;
+		transform: translate(0%, -50%);
+		z-index: -1;
+    	border-radius: 20px;
+	}
+	.fami-app .img-app{
+		display: none;
+	}
+	.fami-app .box{
+		display: inline-block;
+	}
+	.item-app{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.item-app .img{
+		float: left;
+		margin-left: 0;
+		margin-right: 15px !important;
+		width: 40px;
+    	height: 40px;
+	}
+	.item-app p{
+		text-align: left;
+	}
+	.style-center p{
+		width: 90% !important;
+	}
+	.nav-tabs-news .nav-tabs{
+		width: auto !important;
+		display: grid;
+	}
+	.nav-tabs-news .nav-tabs .nav-item{
+		width: auto !important;
+	}
+	.nav-tabs-news .nav-tabs .nav-item .nav-link{
+		width: 70%;
+		margin: auto;
+		border-radius: 50px !important;
+		padding: 5px;
+    	margin-bottom: 5px;
+	}
+	.main-menu li a{
+		font-size: 6px;
+	}
+	
 
 }
