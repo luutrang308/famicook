@@ -47,6 +47,12 @@
 	.slider-partner .slick-dots{
 		display: none !important;
 	}
+	.section-banner-title .title-banner{
+		left: 100px;
+	}
+	.info-fw{
+		margin-top: 20px;
+	}
 }
 @media screen and (max-width: 1199px){
 	.slide-homepage .slick-prev{
@@ -60,6 +66,16 @@
 	}
 	.slider-partner .slick-prev, .slider-partner .slick-next{
 		display: none !important;
+	}
+	.section-banner-title .title-banner {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: auto;
+	}
+	.about-right .img img {
+	    width: 100%;
 	}
 }
 @media screen and (max-width: 1199px) and (min-width: 992px){
@@ -78,6 +94,16 @@
 	}
 	.link-page .btn-link:before {
 	    right: 15px;
+	}
+	.info-fw {
+	    margin-top: -90px;
+	}
+	.trademark-left .description-title{
+		width: 100%;
+	}
+	.slider-trademark .item .logo-img {
+	    width: 110px;
+	    height: 110px;
 	}
 	
 
