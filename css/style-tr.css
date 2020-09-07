@@ -270,6 +270,24 @@
   color: #fff;
 }
 
+.btn-gui {
+  background: linear-gradient(104.47deg, #610E08 -7.09%, #B83B33 37.12%, #EC8C1D 87.96%);
+  border-radius: 38px;
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 11px 52px;
+  border: none;
+  margin-top: 30px;
+}
+.btn-gui:hover {
+  background: #610E08;
+  transition: 0.6s;
+  color: #fff;
+}
+
 .video-homepage {
   position: relative;
 }
@@ -476,6 +494,10 @@
 }
 
 /* section banner shop */
+.section-famishop {
+  padding-bottom: 75px;
+}
+
 .famishop-homepage {
   display: inline-block;
   width: 100%;
@@ -1052,6 +1074,7 @@
   position: absolute;
   top: 50%;
   left: 370px;
+  transform: translate(0%, -50%);
 }
 .section-banner-title .title-banner h2 {
   font-family: Poppins-bold;
@@ -1095,7 +1118,7 @@
 
 .breadcrumb-gt {
   background: #fff;
-  margin: 20px 0;
+  margin: 30px 0px 20px 0px;
 }
 .breadcrumb-gt li a {
   font-family: Poppins-regular;
@@ -1151,6 +1174,10 @@
 }
 
 .about-left .description-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-top: 30px;
 }
 .about-left .description-title p {
@@ -1213,12 +1240,8 @@
   overflow: hidden;
   z-index: 0;
 }
-.bg-img:before {
-  position: absolute;
-  content: url(../images/bgabout.png);
-  background-size: cover;
-  bottom: 0;
-  left: 0;
+.bg-img img {
+  width: 100%;
 }
 
 .img-hover {
@@ -1618,7 +1641,7 @@
 .service-post .img img {
   width: 100%;
   height: 100%;
-  object-position: cover;
+  object-fit: cover;
 }
 .service-post .content {
   width: 48%;
@@ -1655,6 +1678,10 @@
   line-height: 24px;
   text-align: justify;
   color: #343434;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .service-post .content .btn-detail {
   font-family: Poppins;
@@ -1717,6 +1744,11 @@
 .pagination-clean ul .active-pagination a {
   color: #FFF6F5;
 }
+.pagination-clean ul .active-next:hover {
+  background: #FFF6F5;
+  transition: 0.6s;
+  border: 1px solid #811F18;
+}
 
 /* side bar */
 .img-service {
@@ -1748,8 +1780,21 @@
   font-size: 24px;
   line-height: 34px;
   color: #811F18;
+  width: 100%;
+  text-align: left;
 }
 .cate-service .title-service a:hover {
+  text-decoration: none;
+}
+.cate-service a {
+  font-family: SVN-Caprica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #811F18;
+}
+.cate-service a:hover {
   text-decoration: none;
 }
 .cate-service .active {
@@ -1782,7 +1827,6 @@
 }
 
 .block__text {
-  display: none;
   padding-top: 10px;
 }
 
@@ -1816,6 +1860,9 @@
 }
 .service-submenu li a:hover {
   text-decoration: none;
+}
+.service-submenu li .cate-active {
+  color: #811F18;
 }
 
 /* 4 chi tiet dich vu */
@@ -1981,7 +2028,7 @@
   background: #811F18;
   border-radius: 50%;
   left: 0;
-  bottom: 5px;
+  top: 7px;
 }
 
 #chitietkhoahoc a:hover {
@@ -2165,6 +2212,14 @@
   color: #000000;
   margin-right: 15px;
 }
+.comment-box .cmt p {
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
 
 .title-style-2 h2 {
   font-family: SVN-Caprica;
@@ -2194,8 +2249,11 @@
   overflow: hidden;
 }
 
+.slider-feedback .slick-next, .slider-feedback .slick-prev {
+  display: none !important;
+}
 .slider-feedback .slick-dots {
-  bottom: 10px;
+  bottom: -25px;
 }
 .slider-feedback .slick-dots button:before {
   font-size: 13px;
@@ -2667,4 +2725,127 @@
 .footer-mobile .footer-top .list-cate-footer {
   padding-right: 0;
   padding-left: 0;
+}
+
+/* load more see more */
+.description-title p:nth-child(1n+8) {
+  transition: 0.1s ease-in;
+  display: none;
+}
+
+.description-title .load-more-btn {
+  width: 150px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.description-title .load-more-btn .btn-seemore {
+  margin-top: 0;
+}
+
+.description-title .load-more-btn .loaded {
+  display: none;
+}
+
+.description-title #load-more {
+  display: none;
+}
+
+.description-title #load-more:checked ~ p:nth-child(1n+8) {
+  transition: 0.2s ease-in;
+  display: block;
+}
+
+.description-title #load-more:checked ~ .load-more-btn .loaded {
+  display: block;
+}
+
+.description-title #load-more:checked ~ .load-more-btn .unloaded {
+  display: none;
+}
+
+.news-sidebar .post-sb {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #EAEAEA;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+.news-sidebar .post-sb:hover .img img {
+  transform: scale(1.2);
+  transition: 0.6s;
+}
+.news-sidebar .post-sb:hover h4 a:hover {
+  color: #711610;
+  transition: 0.6s;
+  text-decoration: none;
+}
+.news-sidebar .post-sb .img {
+  height: 82px;
+  width: 123px;
+  overflow: hidden;
+}
+.news-sidebar .post-sb .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news-sidebar .post-sb .content {
+  width: calc(100% - 123px);
+  padding-left: 10px;
+  height: 82px;
+}
+.news-sidebar .post-sb .content h4 {
+  margin-top: 0;
+}
+.news-sidebar .post-sb .content h4 a {
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #343434;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.news-sidebar .post-sb .content h4 a:hover {
+  color: #711610;
+  transition: 0.6s;
+  text-decoration: none;
+}
+.news-sidebar .post-sb .content .cate-news a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #979797;
+}
+.news-sidebar .post-sb .content .cate-news a:hover {
+  color: #811F18;
+  text-decoration: none;
+}
+
+.title-news-sb h2 {
+  background: #811F18;
+  width: 100%;
+  font-family: SVN-Caprica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 8px 0;
+  text-align: center;
+  color: #FFFFFF;
 }

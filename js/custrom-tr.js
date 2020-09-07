@@ -85,7 +85,7 @@ $(document).ready(function(){
       });
   });
 
- $(document).ready(function() {
+ /*$(document).ready(function() {
     $('.block__title').click(function(event) {
         if($('.block').hasClass('one')){
             $('.block__title').not($(this)).removeClass('active');
@@ -94,7 +94,7 @@ $(document).ready(function(){
         $(this).toggleClass('active').next().slideToggle(300);
     });
 
-});
+  });
   $(document).ready(function() {
         if($('.block__item').hasClass('block__item__active')){
             $(".block__item__active .block__text", this).css("display","block");
@@ -108,7 +108,7 @@ $(document).ready(function(){
       if($('.block').hasClass('one')){
             $('.block__item').not($(this)).removeClass('block__item__active');
         }
-    });
+    });*/
   
 /* slider feed back */
  $('.slider-feedback').slick({
