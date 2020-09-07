@@ -103,6 +103,12 @@
 	.map-and{
 		padding-right: 15px;
 	}
+	.tags-item{
+		display: inline-block;
+	}
+	.tags-item .tag-box{
+		margin-right: 10px;
+	}
 }
 @media screen and (max-width: 1199px) and (min-width: 992px){
 	.link-page .btn-link{
