@@ -74,16 +74,21 @@ $(document).ready(function(){
     $('.your-class').slick('setPosition');
   });
 
-  $(function() {
 
-      // Chung
-      var topup = $('.top-up');
-
-      topup.on('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-  });
+/* back to top */
+ $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.top-up').fadeIn();
+        } else {
+            $('.top-up').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('.top-up').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 
  /*$(document).ready(function() {
     $('.block__title').click(function(event) {
@@ -117,8 +122,33 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
   });
+ /* menu cố định pc*/
+        jQuery(document).ready(function($) {
+            var $filter = $('.header-pc');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('hd-mb') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("hd-mb");
+                    }
+                    else if ($filter.hasClass('hd-mb')  && $(window).scrollTop() < $filterSpacer.offset().top)
+                    {
+                        $filter.removeClass("hd-mb");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+        });
+  /**/
 
-/* menu cố định */
+/* menu cố định mobile*/
         jQuery(document).ready(function($) {
             var $filter = $('.header-mobile');
             var $filterSpacer = $('<div />', {

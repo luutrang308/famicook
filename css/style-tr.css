@@ -507,11 +507,12 @@
 .famishop-banner {
   position: relative;
   padding: 0;
+  padding-left: 15px;
 }
 .famishop-banner:before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 95%;
   height: 100%;
   border: 1px solid #EC8C1D;
   box-sizing: border-box;
@@ -631,7 +632,7 @@
 
 .fami-app {
   position: relative;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .fami-app .img-app {
   position: absolute;
@@ -968,7 +969,8 @@
 }
 .footer-top .address-footer li span {
   width: 5%;
-  margin-right: 10px;
+  margin-right: 16px;
+  text-align: right;
 }
 .footer-top .address-footer li span img {
   max-width: 100%;
@@ -982,7 +984,8 @@
   color: #FFFFFF;
 }
 .footer-top .icon-footer span {
-  margin-right: 12px;
+  margin-right: 0px;
+  margin-left: 10px;
 }
 .footer-top .icon-footer span img {
   max-width: 100%;
@@ -996,6 +999,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 .list-cate-footer .list-cate {
   padding-left: 0;
@@ -1044,6 +1048,7 @@
   color: white;
   margin-bottom: 0;
   font-family: Poppins-regular;
+  font-size: 12px;
 }
 
 /* 2 - GIOI THIEU */
@@ -1118,7 +1123,7 @@
 
 .breadcrumb-gt {
   background: #fff;
-  margin: 30px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 .breadcrumb-gt li a {
   font-family: Poppins-regular;
@@ -1163,6 +1168,9 @@
 .about-famicook {
   padding-bottom: 80px;
 }
+.about-famicook .about-left {
+  padding-top: 50px;
+}
 
 .description-title {
   font-family: Poppins-regular;
@@ -1177,7 +1185,6 @@
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   margin-top: 30px;
 }
 .about-left .description-title p {
@@ -1188,6 +1195,7 @@
   line-height: 24px;
   color: #343434;
   margin-bottom: 30px;
+  display: inline-block;
 }
 
 .about-right .img {
@@ -1230,7 +1238,7 @@
   padding-bottom: 50px;
 }
 .section-info-page .container {
-  margin-top: -20%;
+  margin-top: -23%;
 }
 
 .bg-img {
@@ -1275,6 +1283,8 @@
 }
 .info-fw .item-fw .title {
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .info-fw .item-fw .title:before {
   position: absolute;
@@ -1317,6 +1327,9 @@
   text-align: justify;
   color: #343434;
 }
+.info-fw .item-fw .description-fw .t-center {
+  text-align: center;
+}
 .info-fw .item-fw:hover {
   background: #EC8C1D;
   transition: 0.6s;
@@ -1342,6 +1355,7 @@
 /*slider-trademark*/
 .slider-trademark {
   position: relative;
+  padding-top: 40px;
 }
 .slider-trademark .item {
   display: flex !important;
@@ -1386,6 +1400,7 @@
 .trademark-left .description-title {
   width: 70%;
   text-align: justify;
+  margin-top: 40px;
 }
 
 /* fami style 1 */
@@ -1584,7 +1599,7 @@
 .zalo-btn {
   position: fixed;
   bottom: 180px;
-  right: 15%;
+  right: 14.3%;
   outline: none;
   cursor: pointer;
   z-index: 1;
@@ -1611,6 +1626,56 @@
   transform: translate(-50%, -50%);
 }
 
+.circle {
+  border-radius: 50%;
+  background-color: #EC8C1D;
+  transition: height 0.25s ease, width 0.25s ease;
+  transform: translate(-50%, -50%);
+}
+.circle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 0px;
+  bottom: 0;
+  left: -7px;
+  border-radius: 50%;
+  border: 1px solid #ec8c1d85;
+  background: #ec8c1d1f;
+}
+.circle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #ec8c1d85;
+  background: #ec8c1d1f;
+}
+.circle:before {
+  animation: ripple 2.5s linear infinite;
+}
+.circle:after {
+  animation: ripple 2s linear 1s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.75);
+    opacity: 0;
+  }
+}
 /* post service */
 .service-post {
   display: flex;
@@ -2614,7 +2679,7 @@
   top: 60px;
 }
 .bottom-mobile .search-mb .item-search form {
-  width: 150px;
+  width: 130px;
   background: #FFFFFF;
   position: relative;
   border-radius: 5px;
@@ -2631,7 +2696,7 @@
 }
 .bottom-mobile .search-mb .item-search form .btn-searchmb img {
   width: 15px;
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 .hd-mb {
@@ -2737,8 +2802,7 @@
   width: 150px;
   line-height: 40px;
   border-radius: 2px;
-  margin: 0 auto;
-  display: block;
+  display: inline-block;
   color: #fff;
   cursor: pointer;
   text-align: center;
@@ -2758,7 +2822,7 @@
 
 .description-title #load-more:checked ~ p:nth-child(1n+8) {
   transition: 0.2s ease-in;
-  display: block;
+  display: inline-block;
 }
 
 .description-title #load-more:checked ~ .load-more-btn .loaded {
