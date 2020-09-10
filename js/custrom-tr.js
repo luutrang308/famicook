@@ -90,7 +90,15 @@ $(document).ready(function(){
             $('.header_top').fadeOut();
         }
     });
-
+$(window).scroll(function(){
+        if ($(this).scrollTop() > 1000) {
+            $('.poster').css("opacity", "1");
+            $('.poster').css("transition", "1s");
+        } else {
+            $('.poster').css("opacity", "0");
+        }
+    });
+ 
     
     //Click event to scroll to top
     $('.top-up').click(function(){

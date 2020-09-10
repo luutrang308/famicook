@@ -343,6 +343,9 @@
 	}
 }
 @media screen and (max-width: 765px){
+	.your-class .slick-list{
+		padding: 0px 60px 0px 0px;
+	}
 	.tab-content-news .slick-dots .slick-active button:before,
 	.tab-content-news .slick-dots button:before,
 	.parner .slider-partner .slick-dots .slick-active button:before,
