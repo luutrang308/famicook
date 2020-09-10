@@ -1636,13 +1636,13 @@
   content: "";
   display: block;
   position: absolute;
-  top: -7px;
+  top: -8px;
   right: 0px;
   bottom: 0;
-  left: -7px;
+  left: -8px;
   border-radius: 50%;
   border: 1px solid #ec8c1d85;
-  background: #ec8c1d1f;
+  background: #ec8c1d30;
 }
 .circle:after {
   content: "";
@@ -1654,7 +1654,7 @@
   left: 0;
   border-radius: 50%;
   border: 1px solid #ec8c1d85;
-  background: #ec8c1d1f;
+  background: #ec8c1d30;
 }
 .circle:before {
   animation: ripple 2.5s linear infinite;
@@ -2366,6 +2366,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.tags-item .tag-box:hover {
+  box-shadow: 0px 6px 15px 1px #80808085;
+  transition: 0.4s;
+}
 .tags-item .tag-box a {
   width: 20%;
   font-family: Poppins-regular;
@@ -2378,6 +2382,9 @@
   background: #F3F3F3;
   border-radius: 5px;
   width: 100%;
+}
+.tags-item .tag-box a:hover {
+  text-decoration: none;
 }
 
 .banner-lienhe {

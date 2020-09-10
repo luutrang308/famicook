@@ -343,6 +343,15 @@
 	}
 }
 @media screen and (max-width: 765px){
+	.tab-content-news .slick-dots .slick-active button:before,
+	.tab-content-news .slick-dots button:before,
+	.parner .slider-partner .slick-dots .slick-active button:before,
+	.parner .slider-partner .slick-dots button:before{
+		font-size: 8px;
+	}
+	.section-famishop{
+		padding-bottom: 10px;
+	}
 	.zalo-btn{
 		right: 11.3%;
 	}
@@ -407,8 +416,8 @@
 	.item-app{
 		width: 87%;
 		margin-right: 0;
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	.item-app .img{
 		float: left;

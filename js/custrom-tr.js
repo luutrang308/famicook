@@ -77,12 +77,20 @@ $(document).ready(function(){
 
 /* back to top */
  $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 500) {
             $('.top-up').fadeIn();
         } else {
             $('.top-up').fadeOut();
         }
     });
+ $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+            $('.header_top').fadeIn();
+        } else {
+            $('.header_top').fadeOut();
+        }
+    });
+
     
     //Click event to scroll to top
     $('.top-up').click(function(){

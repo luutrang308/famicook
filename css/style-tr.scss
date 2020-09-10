@@ -1680,10 +1680,13 @@
       content:'';
       display:block;
       position:absolute;
-      top:-7px; right:0px; bottom:0; left:-7px;
+      top:-8px;
+      right:0px;
+      bottom:0;
+      left:-8px;
       border-radius:50%;
       border:1px solid #ec8c1d85; 
-      background: #ec8c1d1f;
+      background: #ec8c1d30;
     }
     &:after {
       content:'';
@@ -1692,7 +1695,7 @@
       top:0; right:0; bottom:0; left:0;
       border-radius:50%;
       border:1px solid #ec8c1d85; 
-      background: #ec8c1d1f;
+      background: #ec8c1d30;
     }
     
     &:before {
@@ -2433,6 +2436,10 @@
 		text-align: center;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		&:hover{
+			box-shadow: 0px 6px 15px 1px #80808085;
+			transition: 0.4s;
+		}
 		a{
 			width: 20%;
 			font-family: Poppins-regular;
@@ -2445,6 +2452,9 @@
 			background: #F3F3F3;
 			border-radius: 5px;
 			width: 100%;
+			&:hover{
+				text-decoration:none;
+			}
 		}
 	}
 }
