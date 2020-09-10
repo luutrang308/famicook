@@ -2352,28 +2352,36 @@
   overflow: hidden;
 }
 
-.slider-feedback .slick-next, .slider-feedback .slick-prev {
-  display: none !important;
-}
-.slider-feedback .slick-dots {
-  bottom: -25px;
-}
-.slider-feedback .slick-dots button:before {
-  font-size: 13px;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #811f18;
-  opacity: 1;
-}
-.slider-feedback .slick-dots .slick-active button:before {
-  font-size: 13px;
-  color: #811f18;
-  opacity: 1;
-}
-.slider-feedback .slick-slide img {
-  width: 100%;
-}
+/*.slider-feedback{
+	.slick-next,.slick-prev{
+		display:none !important;
+	}
+	.slick-dots{
+		bottom: -25px;
+		button{
+			&:before{
+				font-size: 13px;
+				color: transparent;
+				-webkit-text-stroke-width: 1px;
+    			-webkit-text-stroke-color: #811f18;
+    			opacity: 1;
+			}
+		}
+		.slick-active{
+			button{
+				&:before{
+					font-size: 13px;
+					color: #811f18;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.slick-slide img{
+		width: 100%;
+	}
 
+}*/
 .combo-gift a {
   font-family: Poppins-bold;
   font-style: normal;
@@ -2957,4 +2965,61 @@
   padding: 8px 0;
   text-align: center;
   color: #FFFFFF;
+}
+
+.gallery-feedback {
+  text-align: center;
+  position: relative;
+}
+.gallery-feedback .list-inline {
+  justify-content: space-between;
+  display: flex;
+}
+.gallery-feedback .list-inline li {
+  position: relative;
+}
+.gallery-feedback .list-inline li:before {
+  position: absolute;
+  content: url(../images/search.png);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px 3px 10px;
+  background: #ffffffc7;
+  border-radius: 50%;
+}
+.gallery-feedback .list-inline li:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+  border: 1px solid #ddd;
+}
+.gallery-feedback .list-inline li a img {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  border: none;
+}
+.gallery-feedback .modal-content {
+  background: #fff;
+  margin-top: 25%;
+}
+.gallery-feedback .close {
+  opacity: 1;
+  background: #fff;
+  border-radius: 5px;
+}
+.gallery-feedback .modal-header {
+  border-bottom: none;
+}
+.gallery-feedback .modal-body {
+  padding: 5px;
+  height: 400px;
+  overflow: hidden;
+}
+
+#myGallery .item {
+  height: 390px;
+}
+#myGallery .item img {
+  height: 100%;
+  margin: auto;
 }

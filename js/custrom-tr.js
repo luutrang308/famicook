@@ -1,6 +1,8 @@
 $(document).ready(function(){
   new WOW().init();
-	/*slider phong ngu*/
+  
+  
+	/*slider*/
 	$('.slide-homepage').slick({
 	  dots: true,
 	  infinite: true,
@@ -131,13 +133,8 @@ $(window).scroll(function(){
         }
     });*/
   
-/* slider feed back */
- $('.slider-feedback').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-  });
+
+
  /* menu cố định pc*/
         jQuery(document).ready(function($) {
             var $filter = $('.header-pc');
@@ -189,6 +186,7 @@ $(window).scroll(function(){
             }
         });
   /**/
+  
   $(".icon-menu").click(function () {
         $(".sub-menu-mb").fadeToggle("slow");
     });
@@ -227,6 +225,7 @@ $(window).scroll(function(){
   });
 
 
+/**/
 
 
 });
