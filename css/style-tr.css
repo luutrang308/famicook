@@ -355,6 +355,10 @@
 }
 
 /* section post */
+.post-page-slide-mb .slick-list, .your-class .slick-list {
+  padding: 0px 60px 0px 0px;
+}
+
 .padding-top-60 {
   padding-top: 60px;
 }

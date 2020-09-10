@@ -193,12 +193,13 @@ $(document).ready(function(){
     responsive:[
     {
       breakpoint: 765,
-      settings: {
+      settings: {/*
+        centerMode: true,*/
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
-        autoplay: true,
+        dots: true,/*
+        autoplay: true,*/
       }
     },
     ]
